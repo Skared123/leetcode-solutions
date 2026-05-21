@@ -9,11 +9,6 @@ class Solution {
         Arrays.sort(sSortedCharArray);
         Arrays.sort(tSortedCharArray);
 
-        for (int i = 0 ; i < sSortedCharArray.length ; i++) {
-            if (sSortedCharArray[i] != tSortedCharArray[i]){
-                return false;
-            }
-        }
-        return true;
+        return Arrays.equals(sSortedCharArray, tSortedCharArray);
     }
 }
